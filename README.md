@@ -41,6 +41,9 @@ inaccuracies or bugs (please report!)
 - Simulating account balance with day granularity
 - Plotting results using PyPlot
 
+![betty1](betty_graph.png)
+![betty2](betty_txt.png)
+
 ## Dependencies
 
 The script uses NumPy, MatPlotLib and Pandas for plotting. This may be improved in a future version

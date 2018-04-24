@@ -257,7 +257,7 @@ class MonthlyIncome(AIncome):
                             self.ended = True
                             topay = self.remains
                             self.remains = 0
-                            return topay
+                            return topay if self.monthly > 0 else -topay
                         self.remains -= abs(self.monthly)
                     else:
                         return 0
