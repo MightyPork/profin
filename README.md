@@ -41,8 +41,13 @@ inaccuracies or bugs (please report!)
 - Simulating account balance with day granularity
 - Plotting results using PyPlot
 
-![betty1](betty_graph.png)
+**Example with Betty's car purchase**
+
 ![betty2](betty_txt.png)
+
+*(note: spreading was switched off for a more readable display here, so the values are slightly different from the graph below which has spreading enabled)*
+
+![betty1](betty_graph.png)
 
 ## Dependencies
 
