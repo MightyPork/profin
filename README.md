@@ -98,6 +98,8 @@ represented the same way.
 Generally all methods return the object itself for easy chaining, with the exception of Projector methods like `monthly`, `single` etc,
 which are shortcuts for creating income instances.
 
+Months can be numeric 1-12 or textual e.g. jan or January (case is ignored)
+
 ### Projector API
 
 - `pf.date(year, month, day)` - set time cursor. This is used for subsequently created incomes as a starting date, or
