@@ -95,6 +95,9 @@ samples is an array of record when the abalnce changed that we cna plot using th
 ProFin works with two types of objects: the profiler, and incomes. Expense is a negative income and is internally 
 represented the same way.
 
+Generally all methods return the object itself for easy chaining, with the exception of Projector methods like `monthly`, `single` etc,
+which are shortcuts for creating income instances.
+
 ### Projector API
 
 - `pf.date(year, month, day)` - set time cursor. This is used for subsequently created incomes as a starting date, or
@@ -118,9 +121,9 @@ represented the same way.
 
 ### MonthlyIncome API
 
-- `mi.on(day)` - set the pay day in the month, returns self
-- `mi.skip_month(year, month)` - skip a month's payment, return self
-- `mi.start(year, month, day)` - set start date (month, day default to Jan 1), return self.
+- `mi.on(day)` - set the pay day in the month
+- `mi.skip_month(year, month)` - skip a month's payment
+- `mi.start(year, month, day)` - set start date (month, day default to Jan 1)
   If no args given, take current cursor's date
 - `mi.end(year, month, day)` - end the payments. If no args given, take last day of current cursor's month
 - `mi.total(total)` - set a total money cap, after it's exhausted the payments stop
